@@ -1,0 +1,16 @@
+
+//components
+import Header from "../header/header";
+
+
+const Layout = ({children}) => {
+
+    return (
+        <div>
+            <Header></Header>
+            {children}
+        </div>
+    )
+}
+
+export default Layout;

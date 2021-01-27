@@ -1,0 +1,96 @@
+@font-face {
+  font-family: arab;
+  src: url("../../public/font.ttf");
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 0px 20px;
+  @media (max-width: 900px) {
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .textContainer {
+    width: 50%;
+    @media (max-width: 900px) {
+      width: 100%;
+
+      p {
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+
+    h1 {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: #dec481;
+      font-family: arab;
+      margin-left: 20px;
+      font-size: 50px;
+    }
+
+    .text {
+      margin-top: -30px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 900px) {
+        margin-left: 20%;
+      }
+
+      a {
+        font-size: 20px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .product {
+        display: flex;
+        justify-content: center;
+        width: 195px;
+        border: 2px solid #dec481;
+        border-radius: 30px;
+        background-color: #dec481;
+        @media (max-width: 900px) {
+          margin-bottom: 20px;
+        }
+
+        .icon {
+          font-weight: bolder;
+          margin-top: 2px;
+          margin-left: 10px;
+        }
+      }
+
+      .wtsp {
+        display: flex;
+        justify-content: center;
+        width: 195px;
+        border: 2px solid #25d366;
+        border-radius: 30px;
+
+        .icon {
+          margin-top: 2px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .svgContainer {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+}

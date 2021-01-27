@@ -1,41 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-
 .headerContainer {
   padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
+  @media (max-width: 900px) {
+    display: none;
+  }
+  .menu {
+    font-size: 20px;
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin: 0 20px;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        &:hover {
+          color: #dec481;
+        }
+        a {
+          padding: 5px 8px;
+        }
+      }
+      .activeLink {
+        background-color: #dec481;
+        border-radius: 10px;
+        color: white;
+      }
+    }
+  }
 
   .menuContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    .menu {
-      font-size: 20px;
-      ul {
-        display: flex;
-        list-style: none;
-        margin-left: 200px;
-
-        li {
-          margin: 0 20px;
-          cursor: pointer;
-          transition: all 0.2s ease-in;
-          &:hover {
-            color: #dcc480;
-          }
-          a {
-            padding: 5px 8px;
-          }
-        }
-        .activeLink {
-          background-color: #dcc480;
-          border-radius: 10px;
-          color: white;
-        }
-      }
-    }
 
     .social {
       font-size: 20px;
@@ -48,7 +48,7 @@
         transition: all 0.3s ease-in;
         cursor: pointer;
         &:hover {
-          color: #dcc480;
+          color: #dec481;
         }
       }
     }

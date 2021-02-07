@@ -8,6 +8,8 @@
   justify-content: center;
   justify-content: space-around;
   padding: 0px 20px;
+  width: 100%;
+
   @media (max-width: 900px) {
     padding: 0 10px;
     align-items: center;
@@ -17,7 +19,6 @@
     width: 50%;
     @media (max-width: 900px) {
       width: 100%;
-
       p {
         font-size: 25px;
         text-align: center;
@@ -58,31 +59,40 @@
       .product {
         display: flex;
         justify-content: center;
-        width: 195px;
-        border: 2px solid #dec481;
-        border-radius: 30px;
-        background-color: #dec481;
+        width: 250px;
+        border-radius: 10px;
+        background-color: rgba($color: #dec481, $alpha: 0.5);
         @media (max-width: 900px) {
           margin-bottom: 20px;
         }
+        transition: all 0.2s ease-in;
 
         .icon {
           font-weight: bolder;
           margin-top: 2px;
           margin-left: 10px;
         }
+
+        &:hover {
+          background-color: rgba($color: #dec481, $alpha: 1);
+        }
       }
 
       .wtsp {
         display: flex;
         justify-content: center;
-        width: 195px;
+        width: 250px;
         border: 2px solid #25d366;
-        border-radius: 30px;
+        border-radius: 10px;
+        transition: all 0.2s ease-in;
 
         .icon {
           margin-top: 2px;
           margin-left: 10px;
+        }
+
+        &:hover {
+          background-color: rgba($color: #25d366, $alpha: 0.8);
         }
       }
     }

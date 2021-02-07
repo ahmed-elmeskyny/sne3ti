@@ -7,6 +7,8 @@ import styles from '../styles/Home.module.css';
 //components
 import Layout from "../components/layout/layout";
 import Main from "../components/main/main";
+import Info from '../components/info/info';
+import Featured from '../components/featured/featured';
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       </Head>
       <Layout>
         <Main></Main>
+        <Info></Info>
+        <Featured></Featured>
       </Layout>
     </div>
   

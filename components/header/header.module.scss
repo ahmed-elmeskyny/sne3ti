@@ -7,32 +7,8 @@
   @media (max-width: 900px) {
     display: none;
   }
-  .menu {
-    font-size: 20px;
-    ul {
-      display: flex;
-      list-style: none;
 
-      li {
-        margin: 0 20px;
-        cursor: pointer;
-        transition: all 0.2s ease-in;
-        &:hover {
-          color: #dec481;
-        }
-        a {
-          padding: 5px 8px;
-        }
-      }
-      .activeLink {
-        background-color: #dec481;
-        border-radius: 10px;
-        color: white;
-      }
-    }
-  }
-
-  .menuContainer {
+  .socialContainer {
     display: flex;
     justify-content: center;
     align-items: center;

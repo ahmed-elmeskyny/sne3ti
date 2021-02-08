@@ -15,48 +15,57 @@ import {FaHandHoldingHeart} from "react-icons/fa";
 const Featured = ()=>{
 
     return(
-        <>
         <div className={styles.featuredContainer}>
-            <div className={styles.featuredImageContainer}>
-                <img alt="nani" src="/jelabaFeatured1.jpg" width="100%" height="100%"></img>
+            <div className={styles.titleContainer}>
+                <div className={styles.title}>
+                    <h6>En Vedette</h6>
+                    <h2>Jelaba traditionel </h2>
+                </div>
+                <div className={styles.text}>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos in, illo totam odit nemo fugit vel amet corrupti similique iure natus molestias placeat atque minus, sit quas laboriosam magnam! Dolorum.</p>
+                </div>
             </div>
-            <div className={styles.description}>
-                <h3>Jelaba traditionnel pour Femme</h3>
-                 <p><span> Prix: </span> 1000 DH  <span>1500 DH </span></p>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam earum facere ratione impedit illo. Veniam quidem voluptates facere est aliquid. Quibusdam inventore aperiam sequi quam earum repudiandae dolore excepturi.</p>
-                 <div className={styles.icons}>
+            <div className={styles.featuredproduct}>
+                <div className={styles.featuredImageContainer}>
+                     <img alt="nani" src="/jelabaFeatured1.jpg" width="100%" height="100%"></img>
+                </div>
+                <div className={styles.description}>
+                    <h3>Jelaba traditionnel pour Femme</h3>
+                    <p><span style={{fontWeight: "bold"}}> Prix:  1000 DH  </span><span style={{fontSize: "12px" , textDecoration: "line-through" , marginLeft:"10px"}}>1500 DH </span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam earum facere ratione impedit illo. Veniam quidem voluptates facere est aliquid. Quibusdam inventore aperiam sequi quam earum repudiandae dolore excepturi.</p>
+                    <div className={styles.icons}>
 
-                     <div className={styles.icon}>
+                        <div className={styles.icon}>
                          <FaShippingFast></FaShippingFast>
                          <span>Gratuite</span>
+                        </div>
+
+                        <div className={styles.icon}>
+                            <RiRefund2Line></RiRefund2Line>
+                            <span>Rembouresement</span>
+                        </div>
+
+                        <div className={styles.icon}>
+                            <FaHandHoldingHeart></FaHandHoldingHeart>
+                            <span>Qualite</span>
+                        </div>
+
+
+
                     </div>
-
-                    <div className={styles.icon}>
-                         <RiRefund2Line></RiRefund2Line>
-                         <span>Rembouresement</span>
-                    </div>
-
-                    <div className={styles.icon}>
-                         <FaHandHoldingHeart></FaHandHoldingHeart>
-                         <span>Qualite</span>
-                    </div>
-
-
-
+                    <h5>Offre limitée </h5>
+                    <button>Commander  sur Whatsapp <IoLogoWhatsapp style={{marginLeft:"10px", fontSize:"20px"}}></IoLogoWhatsapp> </button>
                  </div>
-                 <h5>Offre limitée </h5>
-                 <button>Commander  sur Whatsapp <IoLogoWhatsapp></IoLogoWhatsapp> </button>
-            </div>
-            <div className={styles.productImageContainer}>
-                <div className={styles.productOne}>
-                    {/* <img alt="jelaba" src="/jelabaHomme.jpg"></img> */}
-                </div>
-                <div className={styles.productTwo}>
-                    {/* <img alt="jelaba" src="/jelabaFeatured.jpg"></img> */}
+                <div className={styles.productImageContainer}>
+                     <div className={styles.productOne}>
+                        {/* <img alt="jelaba" src="/jelabaHomme.jpg"></img> */}
+                    </div>
+                    <div className={styles.productTwo}>
+                        {/* <img alt="jelaba" src="/jelabaFeatured.jpg"></img> */}
+                    </div>
                 </div>
             </div>
         </div>
-        </>
     )
 }
 

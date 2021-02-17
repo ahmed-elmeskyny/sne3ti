@@ -12,19 +12,14 @@ import {RiRefund2Line} from "react-icons/ri";
 import {FaHandHoldingHeart} from "react-icons/fa";
 
 
+//components
+import DynamicTitle from "../dynamicTitle/dynamicTitle";
+
 const Featured = ()=>{
 
     return(
         <div className={styles.featuredContainer}>
-            <div className={styles.titleContainer}>
-                <div className={styles.title}>
-                    <h6>En Vedette</h6>
-                    <h2>Jelaba traditionel </h2>
-                </div>
-                <div className={styles.text}>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos in, illo totam odit nemo fugit vel amet corrupti similique iure natus molestias placeat atque minus, sit quas laboriosam magnam! Dolorum.</p>
-                </div>
-            </div>
+            <DynamicTitle title="En vedette" name="Jelaba traditionel"></DynamicTitle>
             <div className={styles.featuredproduct}>
                 <div className={styles.featuredImageContainer}>
                      <img alt="nani" src="/jelabaFeatured1.jpg" width="100%" height="100%"></img>

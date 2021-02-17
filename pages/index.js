@@ -9,6 +9,9 @@ import Layout from "../components/layout/layout";
 import Main from "../components/main/main";
 import Info from '../components/info/info';
 import Featured from '../components/featured/featured';
+import BestSeller from "../components/bestseller/bestseller";
+import Temoignage from '../components/temoignage/temoignage';
+
 
 export default function Home() {
   return (
@@ -20,6 +23,8 @@ export default function Home() {
         <Main></Main>
         <Info></Info>
         <Featured></Featured>
+        <BestSeller></BestSeller>
+        <Temoignage></Temoignage>
       </Layout>
     </div>
   

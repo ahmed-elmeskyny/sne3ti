@@ -7,18 +7,20 @@ import styles from "./menu.module.scss";
 //react
 import { useEffect , useState} from "react";
 
+import {FiFacebook} from "react-icons/fi";
+import {FiInstagram} from "react-icons/fi";
 
-const Menu = ({isFixed}) => {
+const Menu = () => {
 
     const [Fixed  , setFixed] = useState(false);
 
     const handleScroll = ()=> {
-        const offset=window.scrollY;
+        const offset= window.scrollY;
         if(offset > 300 ){
-          setFixed(false);
+          setFixed(true);
         }
         else{
-          setFixed(true);
+          setFixed(false);
         }
       }
     useEffect(() => {
@@ -26,10 +28,10 @@ const Menu = ({isFixed}) => {
       })
 
     return(
-        <div className={ Fixed ? styles.menu : styles.menuFixed}>
-            { Fixed  ? null : <div className={styles.logo}>
+        <div className={ Fixed ? styles.menuFixed : styles.menu}>
+            { Fixed  ?   <div className={styles.logo}>
                 <p>صنعتي </p>
-            </div> }
+            </div> : null }
                     <ul>
                        <li><ActiveLink href="/" activeClassName={styles.activeLink}><a> Acceuil </a></ActiveLink></li>
                        <li><ActiveLink href="/produit" activeClassName={styles.activeLink}><a> Produits </a></ActiveLink></li>
